@@ -4,7 +4,7 @@ const Home = () => {
   const [images, setImages] = useState([]);
   const [error, setError] = useState('');
   const [currentPage, setCurrentPage] = useState(0);
-  const imagesPerPage = 6; // Number of images to display per page
+  const imagesPerPage = 6;
 
   // Function to fetch images from the API
   const fetchImages = async () => {
@@ -19,7 +19,7 @@ const Home = () => {
       // Log jsonData to understand its structure
       console.log('Fetched data:', jsonData);
 
-      const data = jsonData.data; // Adjust according to your JSON structure
+      const data = jsonData.data;
       
       // Check if data is an object and extract image URLs accordingly
       if (data && typeof data === 'object') {
